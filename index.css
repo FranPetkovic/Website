@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.title{
+    background-color: #1D1D1D;
+    color: #AAAAAA;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+h2{
+    font-size: 1vw;
+}
+h1{
+    font-size: 16.4vw;
+    letter-spacing: -2.6vw;
+    font-family: "Arial Narrow";
+    position: absolute;
+    bottom: 8vh;
+}
+.scrollDown{
+    position: absolute;
+    bottom: 14.5vh;
+    right: 2vw;
+}
+.ime{
+    width: 100px;
+    margin-left: 10px;
+}
+button{
+    font-size: 1vw;
+    background: none;
+	color: #AAAAAA;
+	border: 1px #AAAAAA solid;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+button:hover{
+    cursor: pointer;
+}
+.aboutSec{
+    background-color: #F8F8F8;
+    color: #1D1D1D;
+    min-height: 95vh;
+    width: 100%;
+    padding: 5vw;
+}
+h3{
+    color: #1D1D1D;
+    font-size: 1.5vw;
+    font-weight: normal;
+}
+p{
+    color: #1D1D1D;
+    font-size: 2vw;
+    width: 30vw;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+}
+
+.about h3{
+    align-self: flex-start;
+    margin-top: 2.5vw;
+}
+.skills h3{
+    align-self: flex-start;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10vw;
+}
+.skills button{
+    width: 20vw;
+    align-self: flex-end;
+	border: 1px #1D1D1D solid;
+    color: #1D1D1D;
+    padding: 0.5vw;
+}
+.skillsLista{
+    width: 30vw;
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+}
+.skillsLista span{
+	border: 1px #1D1D1D solid;
+    color: #1D1D1D;
+    width: 6.75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2vw;
+    border-radius: 50px;
+    font-size: 1vw;
+}
+.container{
+    background-color: #F8F8F8;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5vw;
+    width: 5000px;
+    padding: 5vw;
+}
+.p1{
+    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015975907997007944/unknown.png");
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    width: 75vw;
+    height: 90vh;
+    border: 1px black solid;
+}
+.p2{
+    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015977326196039740/unknown.png");
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    width: 75vw;
+    height: 90vh;
+    border: 1px black solid;
+}
+.p3{
+    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015978058903212103/unknown.png");
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    width: 75vw;
+    height: 90vh;
+    border: 1px black solid;
+}
+
+.contact{
+    background-color: #1D1D1D;
+    color: #AAAAAA;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
