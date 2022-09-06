@@ -7,6 +7,10 @@
 body::-webkit-scrollbar {
     display: none;
 }
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
 .title{
     background-color: #1D1D1D;
     color: #AAAAAA;
@@ -162,6 +166,7 @@ img{
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
