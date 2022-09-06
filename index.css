@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Arial";
 }
+html {
+    scroll-behavior: smooth;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -11,9 +14,10 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
+
 .title{
     background-color: #1D1D1D;
-    color: #AAAAAA;
+    color: #777777;
     min-height: 100vh;
     width: 100%;
     padding: 20px;
@@ -33,6 +37,14 @@ h1{
     position: absolute;
     bottom: 8vh;
 }
+.title span{
+    font-size: 16.4vw;
+    letter-spacing: -2.6vw;
+    font-family: "Arial Narrow";
+}
+.title span:hover{
+    color: #AAAAAA;
+}
 .scrollDown{
     position: absolute;
     bottom: 14.5vh;
@@ -45,8 +57,8 @@ h1{
 button{
     font-size: 1vw;
     background: none;
-	color: #AAAAAA;
-	border: 1px #AAAAAA solid;
+	color: #777777;
+	border: 1px #777777 solid;
     padding: 5px 20px;
     border-radius: 50px;
 }
@@ -162,11 +174,33 @@ img{
 
 .contact{
     background-color: #1D1D1D;
-    color: #AAAAAA;
+    color: #777777;
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.pomoc{
+    display: flex;
+    overflow-x: hidden;
+}
+.workTogether{
+    font-size: 7vw;
+    margin: 3.5vw 0;
+    margin-top: 0px;
+}
+
+h4{
+    font-size: 3vw;
+    margin: 5vw 0;
+}
+.links span{
+    color: #777777;
+    font-size: 1.5vw;
+	border: 1px #777777 solid;
+    border-radius: 50pc;
+    padding: 0.5vw 1vw;
+    margin: 10px;
 }
