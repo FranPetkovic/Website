@@ -150,6 +150,12 @@ img{
     width: 75vw;
     height: 90vh;
     border: 1px black solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 .p2{
     background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015977326196039740/unknown.png");
@@ -160,6 +166,12 @@ img{
     width: 75vw;
     height: 90vh;
     border: 1px black solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 .p3{
     background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015978058903212103/unknown.png");
@@ -170,6 +182,12 @@ img{
     width: 75vw;
     height: 90vh;
     border: 1px black solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .contact{
@@ -203,4 +221,63 @@ h4{
     border-radius: 50pc;
     padding: 0.5vw 1vw;
     margin: 10px;
+}
+.panel{
+    position: relative;
+    width: 75vw;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2vw;
+}
+.links1{
+    display: flex;
+    width: 20vw;
+    margin-bottom: 1vw;
+}
+.panel h2{
+    font-size: 5vw;
+    color: #F8F8F8;
+}
+
+.panel span{
+    color: #F8F8F8;
+    font-size: 1.5vw;
+	border: 1px #F8F8F8 solid;
+    border-radius: 50pc;
+    padding: 0.5vw 1vw;
+    margin: 10px;
+}
+
+
+.p1:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}
+.p2:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}
+.p3:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
 }
