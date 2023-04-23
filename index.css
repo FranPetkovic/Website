@@ -90,8 +90,12 @@ p{
 }
 img{
     border-radius: 50%;
-    height: 20vw;
-    width: 20vw;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover; /* or "contain" */
+    filter: grayscale(100%);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .about h3{
@@ -138,7 +142,7 @@ img{
     justify-content: flex-start;
     align-items: center;
     gap: 5vw;
-    width: 5000px;
+    width: 7500px;
     padding: 5vw;
 }
 .p1{
@@ -175,6 +179,38 @@ img{
 }
 .p3{
     background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015978058903212103/unknown.png");
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    width: 75vw;
+    height: 90vh;
+    border: 1px black solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.p4{
+    background: url("https://media.discordapp.net/attachments/567411155752976395/1099625817581035540/image.png?width=1385&height=676");
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+    filter: blur(2px);
+    width: 75vw;
+    height: 90vh;
+    border: 1px black solid;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.p5{
+    background: url("https://media.discordapp.net/attachments/567411155752976395/1099635112628453406/image.png?width=1389&height=676");
     background-size:     cover;                 
     background-repeat:   no-repeat;
     background-position: center center;
@@ -261,6 +297,16 @@ h4{
     display: block;
     content: "";
 }
+.p4:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}
 .p2:after {
     position: absolute;
     height: 100%;
@@ -280,4 +326,20 @@ h4{
     left: 0;
     display: block;
     content: "";
+}
+.p5:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+}
+.zadnji{
+    margin-right: 50px;
+}
+.neaktivno{
+    text-decoration: line-through;
 }
