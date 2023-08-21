@@ -1,345 +1,347 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Arial";
-}
-html {
-    scroll-behavior: smooth;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial";
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+        }
 
-.title{
-    background-color: #1D1D1D;
-    color: #777777;
-    min-height: 100vh;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-}
-h2{
-    font-size: 1vw;
-}
-h1{
-    font-size: 16.4vw;
-    letter-spacing: -2.6vw;
-    font-family: "Arial Narrow";
-    position: absolute;
-    bottom: 8vh;
-}
-.title span{
-    font-size: 16.4vw;
-    letter-spacing: -2.6vw;
-    font-family: "Arial Narrow";
-}
-.title span:hover{
-    color: #AAAAAA;
-}
-.scrollDown{
-    position: absolute;
-    bottom: 14.5vh;
-    right: 2vw;
-}
-.ime{
-    width: 100px;
-    margin-left: 10px;
-}
-button{
-    font-size: 1vw;
-    background: none;
-	color: #777777;
-	border: 1px #777777 solid;
-    padding: 5px 20px;
-    border-radius: 50px;
-}
-button:hover{
-    cursor: pointer;
-}
-.aboutSec{
-    background-color: #F8F8F8;
-    color: #1D1D1D;
-    min-height: 95vh;
-    width: 100%;
-    padding: 5vw;
-}
-h3{
-    color: #1D1D1D;
-    font-size: 1.5vw;
-    font-weight: normal;
-}
-p{
-    color: #1D1D1D;
-    font-size: 2vw;
-    width: 30vw;
-}
+        .title{
+            background-color: #1D1D1D;
+            color: #777777;
+            min-height: 100vh;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        h2{
+            font-size: 1vw;
+        }
+        h1{
+            letter-spacing: -2.6vw;
+            font-family: "Arial Narrow";
+            position: absolute;
+            bottom: 8vh;
+        }
+        .title span{
+            font-size: 16.4vw;
+            letter-spacing: -2.6vw;
+            font-family: "Arial Narrow";
+        }
+        .title span:hover{
+            color: #AAAAAA;
+        }
+        .scrollDown{
+            position: absolute;
+            bottom: 14.5vh;
+            right: 2vw;
+        }
+        .ime{
+            width: 100px;
+            margin-left: 10px;
+        }
+        button{
+            font-size: 1vw;
+            background: none;
+            color: #777777;
+            border: 1px #777777 solid;
+            padding: 5px 20px;
+            border-radius: 50px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .aboutSec{
+            background-color: #F8F8F8;
+            color: #1D1D1D;
+            min-height: 95vh;
+            width: 100%;
+            padding: 5vw;
+        }
+        h3{
+            color: #1D1D1D;
+            font-size: 1.5vw;
+            font-weight: normal;
+        }
+        p{
+            color: #1D1D1D;
+            font-size: 2vw;
+            width: 30vw;
+        }
 
-.about{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-img{
-    border-radius: 50%;
-    width: 15vw;
-    height: 15vw;
-    object-fit: cover; /* or "contain" */
-    filter: grayscale(100%);
-    max-width: 100%;
-    max-height: 100%;
-}
+        .about{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        img{
+            border-radius: 50%;
+            width: 15vw;
+            height: 15vw;
+            object-fit: cover; /* or "contain" */
+            filter: grayscale(100%);
+            max-width: 100%;
+            max-height: 100%;
+        }
 
-.about h3{
-    align-self: flex-start;
-    margin-top: 2.5vw;
-}
-.skills h3{
-    align-self: flex-start;
-}
-.skills{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10vw;
-}
-.skills button{
-    width: 20vw;
-    align-self: flex-end;
-	border: 1px #1D1D1D solid;
-    color: #1D1D1D;
-    padding: 0.5vw;
-}
-.skillsLista{
-    width: 30vw;
-    display: flex;
-    gap: 1vw;
-    flex-wrap: wrap;
-}
-.skillsLista span{
-	border: 1px #1D1D1D solid;
-    color: #1D1D1D;
-    width: 6.75vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2vw;
-    border-radius: 50px;
-    font-size: 1vw;
-}
-.container{
-    background-color: #F8F8F8;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 5vw;
-    width: 7500px;
-    padding: 5vw;
-}
-.p1{
-    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015975907997007944/unknown.png");
-    background-size:     cover;                 
-    background-repeat:   no-repeat;
-    background-position: center center;
-    filter: blur(2px);
-    width: 75vw;
-    height: 90vh;
-    border: 1px black solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.p2{
-    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015977326196039740/unknown.png");
-    background-size:     cover;                 
-    background-repeat:   no-repeat;
-    background-position: center center;
-    filter: blur(2px);
-    width: 75vw;
-    height: 90vh;
-    border: 1px black solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.p3{
-    background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015978058903212103/unknown.png");
-    background-size:     cover;                 
-    background-repeat:   no-repeat;
-    background-position: center center;
-    filter: blur(2px);
-    width: 75vw;
-    height: 90vh;
-    border: 1px black solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.p4{
-    background: url("https://media.discordapp.net/attachments/567411155752976395/1099625817581035540/image.png?width=1385&height=676");
-    background-size:     cover;                 
-    background-repeat:   no-repeat;
-    background-position: center center;
-    filter: blur(2px);
-    width: 75vw;
-    height: 90vh;
-    border: 1px black solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
-.p5{
-    background: url("https://media.discordapp.net/attachments/567411155752976395/1099635112628453406/image.png?width=1389&height=676");
-    background-size:     cover;                 
-    background-repeat:   no-repeat;
-    background-position: center center;
-    filter: blur(2px);
-    width: 75vw;
-    height: 90vh;
-    border: 1px black solid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-}
+        .about h3{
+            align-self: flex-start;
+            margin-top: 2.5vw;
+        }
+        .skills h3{
+            align-self: flex-start;
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10vw;
+        }
+        .skills button{
+            width: 20vw;
+            align-self: flex-end;
+            border: 1px #1D1D1D solid;
+            color: #1D1D1D;
+            padding: 0.5vw;
+        }
+        .skillsLista{
+            width: 30vw;
+            display: flex;
+            gap: 1vw;
+            flex-wrap: wrap;
+        }
+        .skillsLista span{
+            border: 1px #1D1D1D solid;
+            color: #1D1D1D;
+            width: 6.75vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.2vw;
+            border-radius: 50px;
+            font-size: 1vw;
+        }
+        .container{
+            background-color: #F8F8F8;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5vw;
+            width: 7500px;
+            padding: 5vw;
+            padding-left: 0px !important;
+        }
+        .p1{
+            background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015975907997007944/unknown.png");
+            background-size:     cover;                 
+            background-repeat:   no-repeat;
+            background-position: center center;
+            filter: blur(2px);
+            width: 75vw;
+            height: 90vh;
+            border: 1px black solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .p2{
+            background: url("https://cdn.discordapp.com/attachments/567411155752976395/1015977326196039");
+            background-size:     cover;                 
+            background-repeat:   no-repeat;
+            background-position: center center;
+            filter: blur(2px);
+            width: 75vw;
+            height: 90vh;
+            border: 1px black solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .p3{
+            background: url("https://media.discordapp.net/attachments/567411155752976395/1143127040120344698/image.png?width=1306&height=605");
+            background-size:     cover;                 
+            background-repeat:   no-repeat;
+            background-position: center center;
+            filter: blur(2px);
+            width: 75vw;
+            height: 90vh;
+            border: 1px black solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .p4{
+            background: url("https://media.discordapp.net/attachments/567411155752976395/1143127548595818587/image.png?width=1212&height=605");
+            background-size:     cover;                 
+            background-repeat:   no-repeat;
+            background-position: center center;
+            filter: blur(2px);
+            width: 75vw;
+            height: 90vh;
+            border: 1px black solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+        .p5{
+            background: url("https://media.discordapp.net/attachments/567411155752976395/1099635112628453406/image.png?width=1389&height=676");
+            background-size:     cover;                 
+            background-repeat:   no-repeat;
+            background-position: center center;
+            filter: blur(2px);
+            width: 75vw;
+            height: 90vh;
+            border: 1px black solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
 
-.contact{
-    background-color: #1D1D1D;
-    color: #777777;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.pomoc{
-    display: flex;
-    overflow-x: hidden;
-}
-.workTogether{
-    font-size: 7vw;
-    margin: 3.5vw 0;
-    margin-top: 0px;
-}
+        .contact{
+            background-color: #1D1D1D;
+            color: #777777;
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .pomoc{
+            display: flex;
+            overflow-x: hidden;
+        }
+        .workTogether{
+            font-size: 7vw;
+            margin: 3.5vw 0;
+            margin-top: 0px;
+        }
 
-h4{
-    font-size: 3vw;
-    margin: 5vw 0;
-}
-.links span{
-    color: #777777;
-    font-size: 1.5vw;
-	border: 1px #777777 solid;
-    border-radius: 50pc;
-    padding: 0.5vw 1vw;
-    margin: 10px;
-}
-.panel{
-    position: relative;
-    width: 75vw;
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding: 2vw;
-}
-.links1{
-    display: flex;
-    width: 20vw;
-    margin-bottom: 1vw;
-}
-.panel h2{
-    font-size: 5vw;
-    color: #F8F8F8;
-}
+        h4{
+            font-size: 3vw;
+            margin: 5vw 0;
+        }
+        .links span{
+            color: #777777;
+            font-size: 1.5vw;
+            border: 1px #777777 solid;
+            border-radius: 50pc;
+            padding: 0.5vw 1vw;
+            margin: 10px;
+        }
+        .panel{
+            position: relative;
+            width: 75vw;
+            height: 90vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding: 2vw;
+        }
+        .links1{
+            display: flex;
+            width: 20vw;
+            margin-bottom: 1vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .panel h2{
+            font-size: 5vw;
+            color: #F8F8F8;
+        }
 
-.panel span{
-    color: #F8F8F8;
-    font-size: 1.5vw;
-	border: 1px #F8F8F8 solid;
-    border-radius: 50pc;
-    padding: 0.5vw 1vw;
-    margin: 10px;
-}
+        .panel span{
+            color: #F8F8F8;
+            font-size: 1.5vw;
+            border: 1px #F8F8F8 solid;
+            border-radius: 50pc;
+            padding: 0.5vw 1vw;
+            margin: 10px;
+        }
 
 
-.p1:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}
-.p4:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.5);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}
-.p2:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.3);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}
-.p3:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.3);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}
-.p5:after {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.3);
-    top: 0;
-    left: 0;
-    display: block;
-    content: "";
-}
-.zadnji{
-    margin-right: 50px;
-}
-.neaktivno{
-    text-decoration: line-through;
-}
+        .p1:after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.5);
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+        }
+        .p4:after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.5);
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+        }
+        .p2:after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+        }
+        .p3:after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+        }
+        .p5:after {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+        }
+        .zadnji{
+            margin-right: 50px;
+        }
+        .neaktivno{
+            text-decoration: line-through;
+        }
