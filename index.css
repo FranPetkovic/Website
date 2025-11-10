@@ -178,7 +178,7 @@
             z-index: -1;
         }
         .p3{
-            background: url("multipro.png");
+            background: url("slikeZaStranicu/multipro.png");
             background-size:     cover;                 
             background-repeat:   no-repeat;
             background-position: center center;
@@ -194,7 +194,7 @@
             z-index: -1;
         }
         .p4{
-            background: url("matrice.png");
+            background: url("slikeZaStranicu/matrice.png");
             background-size:     cover;                 
             background-repeat:   no-repeat;
             background-position: center center;
@@ -210,7 +210,7 @@
             z-index: -1;
         }
         .p5{
-            background: url("kanye.png");
+            background: url("slikeZaStranicu/kanye.png");
             background-size:     cover;                 
             background-repeat:   no-repeat;
             background-position: center center;
@@ -345,4 +345,5 @@
         .neaktivno{
             text-decoration: line-through;
         }
+
 
