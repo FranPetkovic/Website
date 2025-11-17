@@ -16,6 +16,6 @@ gsap.to(container, {
     scrub: true,
     pin: true,
     anticipatePin: 1,
-    invalidateOnRefresh: true   // ako se promijeni veličina ekrana, sve se ponovo izračuna
+    invalidateOnRefresh: true 
   }
 });
