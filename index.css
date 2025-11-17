@@ -21,7 +21,7 @@ a, a:hover, a:focus, a:active {
 
 .title{
     background-color: #1D1D1D;
-    color: #777777;
+    color: #777776;
     min-height: 100vh;
     width: 100%;
     padding: 20px;
@@ -450,3 +450,4 @@ h4{
         font-size: 9vw;
     }
 }
+
