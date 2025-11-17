@@ -1,15 +1,21 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let sections = gsap.utils.toArray(".scroll .panel");
-let container = document.querySelector('.container')
+const container = document.querySelector(".container");
 
-let scrollTween = gsap.to(sections, {
-  xPercent: -95 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-    trigger: ".scroll",
-    pin: true,
-    scrub: true,
-    end: `+=${container.offsetWidth}`
+function getScrollAmount() {
+  return container.scrollWidth - window.innerWidth;
 }
+
+gsap.to(container, {
+  x: () => -getScrollAmount(),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".scroll",
+    start: "top top",
+    end: () => "+=" + getScrollAmount(),
+    scrub: true,
+    pin: true,
+    anticipatePin: 1,
+    invalidateOnRefresh: true   // ako se promijeni veličina ekrana, sve se ponovo izračuna
+  }
 });
